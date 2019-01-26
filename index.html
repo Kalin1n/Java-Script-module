@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.rawgit.com/chrisveness/crypto/4e93a4d/sha256.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!--Форма-->
+      <div class ="form">
+          <h2>Registration</h2>
+          <form>
+            <input type="text"  placeholder= "Nickname" id="nickname">
+            <input type="password" placeholder="password" id ="password">
+            <input type="password" placeholder="Input password again" id ="checkPassword">
+          </form>
+          <button onclick="addToUsers()" class="formBTN"><strong>Register</strong> </button>
+      </div>
+      <span id="userSign">Signed as : </span>
+      <div class="form">
+          <h2>Sign In</h2>
+          <form>
+            <input type="text"  placeholder= "Nickname" id="nicknameSign">
+            <input type="password" placeholder="password" id ="passwordSign">
+          </form>
+          <button onclick="signAsUser()" class="formBTN"><strong>Sign</strong></button>
+      </div>
+    </header>
+    
+   <!-- Рабочая тудушка-->
+    <main>
+      <h1>TO DO </h1>
+      <input type="text" id="inp" placeholder="input task"> 
+      <button id="addBtn" onclick="addNewElement()">Add task</button>
+      <div class="red">
+        <ul id = "undoneList">
+          <label>Undone tasks </label>
+        </ul>
+      </div>
+      <div class="green">
+        <ul id = "doneList">
+          <label>Done tasks:</label>
+        </ul>
+      </div>
+    </main>
+    <footer>
+     <span> Made by Kalinin Ivan. January 2019.</span>
+     <br>
+     <span>Full Stack JS. A-level.</span>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
